@@ -1,0 +1,17 @@
+{
+    "name": "yanosh-k/subfix",
+    "description": "A front end for the yanosh-k/php-subtitles-convertor",
+    "type": "project",
+    "require": {
+        "yanosh-k/php-subtitles-convertor": "^0.4.1",
+        "twbs/bootstrap": "^5.1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yanosh Kunsh",
+            "email": "me@yanosh.net"
+        }
+    ],
+    "minimum-stability": "dev"
+}
