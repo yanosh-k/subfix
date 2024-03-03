@@ -4,20 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19ff0b979cbefeee081a3fb930440ba4",
+    "content-hash": "57524722f3d296c098fb0794f0a33101",
     "packages": [
         {
-            "name": "twbs/bootstrap",
-            "version": "v5.1.3",
+            "name": "mantas-done/subtitles",
+            "version": "v1.0.21",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "1a6fdfae6be09b09eaced8f0e442ca6f7680a61e"
+                "url": "https://github.com/mantas-done/subtitles.git",
+                "reference": "0544f53712559f2c716783e91e68697696363de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/1a6fdfae6be09b09eaced8f0e442ca6f7680a61e",
-                "reference": "1a6fdfae6be09b09eaced8f0e442ca6f7680a61e",
+                "url": "https://api.github.com/repos/mantas-done/subtitles/zipball/0544f53712559f2c716783e91e68697696363de3",
+                "reference": "0544f53712559f2c716783e91e68697696363de3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Done\\Subtitles\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Subtitle converter and generator for PHP",
+            "support": {
+                "issues": "https://github.com/mantas-done/subtitles/issues",
+                "source": "https://github.com/mantas-done/subtitles/tree/v1.0.21"
+            },
+            "time": "2024-02-22T09:43:09+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
                 "shasum": ""
             },
             "replace": {
@@ -52,39 +86,9 @@
             ],
             "support": {
                 "issues": "https://github.com/twbs/bootstrap/issues",
-                "source": "https://github.com/twbs/bootstrap/tree/v5.1.3"
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.3"
             },
-            "time": "2021-10-09T06:43:19+00:00"
-        },
-        {
-            "name": "yanosh-k/php-subtitles-convertor",
-            "version": "v0.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yanosh-k/php-subtitles-convertor.git",
-                "reference": "3ddba5f3391b5d321f4a74f1fece9d4b91ad1490"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yanosh-k/php-subtitles-convertor/zipball/3ddba5f3391b5d321f4a74f1fece9d4b91ad1490",
-                "reference": "3ddba5f3391b5d321f4a74f1fece9d4b91ad1490",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": "7.*|8.*|9.*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "Subtitle converter and generator for PHP",
-            "support": {
-                "source": "https://github.com/yanosh-k/php-subtitles-convertor/tree/v0.4.1"
-            },
-            "time": "2022-01-10T11:13:29+00:00"
+            "time": "2024-02-20T15:14:29+00:00"
         }
     ],
     "packages-dev": [],
@@ -95,5 +99,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

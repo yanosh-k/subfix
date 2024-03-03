@@ -3,6 +3,10 @@
 require('vendor/autoload.php');
 require('lib/slugify.php');
 
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 // Check if the file was succesffully uploaded
 if (isset($_FILES['input_file']) && $_FILES['input_file']['error'] === 0) {
 
@@ -21,7 +25,7 @@ if (isset($_FILES['input_file']) && $_FILES['input_file']['error'] === 0) {
     }
     
     // Load the file in the library
-    $subtitles = \Done\Subtitles\Subtitles::load($inputString, $inputExtension);
+    $subtitles = \Done\Subtitles\Subtitles::loadFromString($inputString, $inputExtension);
 
     // Resync if needed
     if ($_POST['resync_time']) {
@@ -31,7 +35,7 @@ if (isset($_FILES['input_file']) && $_FILES['input_file']['error'] === 0) {
     // Output as a file
     header('Content-Type: application/octet-stream');
     header('Content-Transfer-Encoding: Binary');
-    header('Content-disposition: attachment; filename="' . strtolower(slug($_FILES['input_file']['name'])) . $_POST['output_format'] . '"');
+    header('Content-disposition: attachment; filename="' . strtolower(slug($_FILES['input_file']['name'])) . '.' . $_POST['output_format'] . '"');
     
     // Output the file content
     echo $subtitles->content($_POST['output_format']);

@@ -1,9 +1,9 @@
 {
     "name": "yanosh-k/subfix",
-    "description": "A front end for the yanosh-k/php-subtitles-convertor",
+    "description": "A front end for the mantas-done/subtitles library.",
     "type": "project",
     "require": {
-        "yanosh-k/php-subtitles-convertor": "^0.4.1",
+        "mantas-done/subtitles": "^1.0.21",
         "twbs/bootstrap": "^5.1.0"
     },
     "license": "MIT",
