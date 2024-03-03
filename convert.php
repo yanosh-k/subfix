@@ -3,10 +3,6 @@
 require('vendor/autoload.php');
 require('lib/slugify.php');
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
 // Check if the file was succesffully uploaded
 if (isset($_FILES['input_file']) && $_FILES['input_file']['error'] === 0) {
 
