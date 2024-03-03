@@ -28,15 +28,18 @@
                 <div class="col-lg-6 mx-auto">
                     <p class="lead mb-4">
                         Quickly convert and resynchronize your subtitle files online. You can choose one of the following file formats for input/output:
-                        <code>.srt</code>,
-                        <code>.vtt</code>,
-                        <code>.stl</code>,
+                        <code>.srt</code>, 
+                        <code>.vtt</code>, 
+                        <code>.stl</code>, 
                         <code>.sbv</code>,
-                        <code>.sub</code>,
-                        <code>.ass</code>,
+                        <code>.sub</code> (SubViewer and MicroDVD), 
+                        <code>.ass</code>, 
                         <code>.dfxp</code>,
-                        <code>.ttml</code>,
-                        <code>.qt.txt</code>.
+                        <code>.ttml</code>, 
+                        <code>.smi</code>, 
+                        <code>.qt.txt</code>, 
+                        <code>.scc</code>, 
+                        <code>.lrc</code>.
                     </p>
 
                     <form action="<?= BASE_URL; ?>convert.php" target="_blank" method="POST" enctype='multipart/form-data'>
